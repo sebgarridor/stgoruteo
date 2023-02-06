@@ -26,6 +26,7 @@ import { MaincontentComponent } from './maincontent/maincontent.component';
 import { InfinitesliderComponent } from './infiniteslider/infiniteslider.component';
 import { RouteSelectorComponent } from './route-selector/route-selector.component';
 import { FormsModule } from '@angular/forms';
+import { MisionComponent } from './mision/mision.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     MaincontentComponent,
     InfinitesliderComponent,
-    RouteSelectorComponent
+    RouteSelectorComponent,
+    MisionComponent
   ],
   imports: [
     BrowserModule,
