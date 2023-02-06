@@ -1,0 +1,11 @@
+<select [(ngModel)]="selectedZona">
+      <option *ngFor="let zona of zonas" [value]="zona">{{zona}}</option>
+    </select>
+    <div *ngIf="selectedZona">
+      <h3>Selected Zona: {{selectedZona}}</h3>
+      <ul>
+        <li *ngFor="let route of routesByZona[selectedZona]">
+          {{route.name}} - {{route.distance}} - {{route.elevationGain}} - {{route.maxElevation}}
+        </li>
+      </ul>
+    </div>

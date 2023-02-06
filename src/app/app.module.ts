@@ -24,16 +24,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaincontentComponent } from './maincontent/maincontent.component';
 import { InfinitesliderComponent } from './infiniteslider/infiniteslider.component';
+import { RouteSelectorComponent } from './route-selector/route-selector.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MaincontentComponent,
-    InfinitesliderComponent
+    InfinitesliderComponent,
+    RouteSelectorComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     MdbAccordionModule,
     MdbCarouselModule,
