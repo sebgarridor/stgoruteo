@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap');
 
 @mixin white-gradient {
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
@@ -11,12 +12,17 @@ $animationSpeed: 40s;
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
+.slider-title {
+    margin-top: 4rem;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+}
 
 // Styling
 .slider {
 	background: white;
 
-	height: 7.5rem;
+	height: 8.5rem;
 	margin: auto;
     margin-top: 2rem !important;
 	overflow:hidden;
@@ -56,10 +62,7 @@ $animationSpeed: 40s;
 		width: 250px;
 	}
 
-    .slider-title {
-        text-align: center;
-    }
-    
+
     .slide img {
         filter: grayscale(100%);
       }

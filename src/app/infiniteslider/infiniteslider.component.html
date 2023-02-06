@@ -1,10 +1,13 @@
-<div class="slider">
+<div class="infinite-slider">
     <div class="slider-title">
-        nuestros sponsors
+        <h2>nuestros sponsors</h2>
     </div>
+    <hr class="hr hr-blurry" />
+<div class="slider">
     <div class="slide-track">
       <div *ngFor="let logo of logos" class="slide">
         <img [src]="logo.src" [height]="logo.height" [width]="logo.width" [alt]="logo.alt"/>
       </div>
     </div>
   </div>
+</div>
