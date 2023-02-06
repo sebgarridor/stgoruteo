@@ -1,0 +1,10 @@
+<div class="slider">
+    <div class="slider-title">
+        nuestros sponsors
+    </div>
+    <div class="slide-track">
+      <div *ngFor="let logo of logos" class="slide">
+        <img [src]="logo.src" [height]="logo.height" [width]="logo.width" [alt]="logo.alt"/>
+      </div>
+    </div>
+  </div>
