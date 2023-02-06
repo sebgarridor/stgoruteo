@@ -59,6 +59,10 @@ $animationSpeed: 40s;
     .slider-title {
         text-align: center;
     }
+    
+    .slide img {
+        filter: grayscale(100%);
+      }
 
 
 }
