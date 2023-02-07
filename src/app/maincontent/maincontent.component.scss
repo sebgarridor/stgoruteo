@@ -5,13 +5,15 @@ $h1-font: 'Prompt', sans-serif;
 
 main {
 
-    margin-top: 4rem;
+    margin-top: 10rem;
     background-color: white;
+    
 
     .first-pic {
         width: $pic-width;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         border-radius: 1rem;
+        margin-bottom: 2rem;
     }
 
 
