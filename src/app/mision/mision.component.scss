@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap');
 
 $pic-width: 95%;
+$mainfont: "Unbounded", cursive;
 
 article {
 
@@ -15,14 +16,14 @@ article {
     }
 
     .mision-title {
-        font-family: 'Unbounded', cursive;
+        font-family: $mainfont;
         font-weight: 300;
         text-align: left;
         letter-spacing: 0.9rem;
     }
 
     .mision-paragraph {
-        font-family: 'Unbounded', cursive;
+        font-family: $mainfont;
         font-size: 1.05rem;
         font-weight: 200;
         text-align: left;

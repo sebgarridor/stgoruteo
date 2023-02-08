@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
+
+$mainfont: "Unbounded", cursive;
+
+article {
+
+
+    margin-top: 8rem;
+
+
+
+  .comofunciona-title {
+    font-family: $mainfont;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.9rem;
+    text-align: center;
+  }
+
+  .comofunciona-paragraph {
+    font-family: $mainfont;
+    font-size: 1.05rem;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+
+
+  }
+}

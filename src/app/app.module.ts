@@ -28,6 +28,7 @@ import { RouteSelectorComponent } from './route-selector/route-selector.componen
 import { FormsModule } from '@angular/forms';
 import { MisionComponent } from './mision/mision.component';
 import { ComofuncionaComponent } from './comofunciona/comofunciona.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { ComofuncionaComponent } from './comofunciona/comofunciona.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
