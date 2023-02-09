@@ -52,10 +52,12 @@ selectZona(zona: string) {
 }
 
 selectedRoute;
+
+//creating the modal
 showModal = false;
 
-// other properties
 
+//function to make the modal popup
 openModal(route) {
   this.selectedRoute = route;
   this.showModal = true;
