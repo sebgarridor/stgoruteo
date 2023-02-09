@@ -1,14 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Playfair+Display:wght@400;700&family=Prompt:wght@100;200;300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap');
 $mainfont: "Unbounded", cursive;
+$titlefont: 'Playfair Display', serif;
 
 article {
 
-    .card {
-        padding: 2  rem;
+    .card { 
+        padding: 2rem;
+        box-shadow: 0px !important;
+
+        img {
+            width: 100%;
+            border-radius: 2px;
+        }
     }
 
-    .card-img {
-        width: 100%
+
+    .card-title {
+        font-family: $mainfont;
+        letter-spacing: 0.5rem;
+        margin-bottom: 1rem;
+        
     }
+
+    .card-text {
+        font-family: $mainfont;
+        margin-bottom: 3.5rem;
+        margin-top: 4rem;
+    }
+
+    .route-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0rem;
+    }
+
+    .route-selector {
+        border: 0px;
+    }
+
+    
 }

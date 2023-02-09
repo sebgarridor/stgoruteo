@@ -1,25 +1,35 @@
 <article>
   <div class="container">
-    <select #zonaSelector (change)="selectZona(zonaSelector.value)">
-      <option value="">Select a zona</option>
+    <div class="route-container">
+    <select class="route-selector" #zonaSelector (change)="selectZona(zonaSelector.value)">
+      <option value="">Selecciona una zona de Santiago</option>
       <option value="norte">Zona Norte</option>
       <option value="oriente">Zona Oriente</option>
       <option value="poniente">Zona Poniente</option>
       <option value="sur">Zona Sur</option>
     </select>
+    
+
+    
+  </div>
     <div *ngIf="selectedZona">
       <div *ngFor="let route of routes">
         <div class="card mb-3" *ngIf="route.zona === selectedZona">
           <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-8">
               <img class="card-img" [src]="route.imageUrl" />
             </div>
-            <div class="col-md-8">
-            <h3 class="card-title">{{ route.name }}</h3>
-            <p class="card-text">Distance: {{ route.distance }}km</p>
-            <p class="card-text">Elevation Gain: {{ route.elevationGain }}m</p>
-            <p class="card-text">Max Elevation: {{ route.maxElevation }}m</p>
+            <div class="col-md-4">
+            <h1 class="card-title">{{ route.name }}</h1>
+            <p class="card-text">Distancia: {{ route.distance }}km</p>
+            <p class="card-text">Pendiente promedio: {{ route.pendientePromedio }}%</p>
+            <p class="card-text">Elevación ganada: {{ route.elevationGain }}m</p>
+            <p class="card-text">Máxima elevación: {{ route.maxElevation }}m</p>
+            
+            
           </div>
+
+          
           </div>
         </div>
       </div>
