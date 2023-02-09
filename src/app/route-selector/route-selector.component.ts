@@ -1,5 +1,7 @@
 import { Component, OnInit,  Output, EventEmitter  } from '@angular/core';
 import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
+import { HttpClient } from '@angular/common/http';
+
 
 
 class Route {
@@ -46,21 +48,40 @@ export class RouteSelectorComponent  {
 ];
 
 selectedZona: string;
+selectedRoute: any;
+showModal = false;
+segmentData: any;
+
+
+//inyecting httpclient
+constructor(private http: HttpClient) {}
 
 selectZona(zona: string) {
-  this.selectedZona = zona;
+this.selectedZona = zona;
 }
 
-selectedRoute;
-
-//creating the modal
-showModal = false;
-
-
-//function to make the modal popup
+//function to make the modal popup and printing the object to see if it works
 openModal(route) {
-  this.selectedRoute = route;
-  this.showModal = true;
+this.selectedRoute = route;
+console.log(this.selectedRoute);
+this.showModal = true;
+
+//
+// making the api call, subscribe is deprecated but still working
+const token = '01acc52ad1c02a81ccb82f3d0aaab809873569c2';
+const segmentId = this.selectedRoute.segmentId;
+const url = `https://www.strava.com/api/v3/segments/${segmentId}?access_token=${token}`;
+
+this.http.get(url).subscribe(
+  data => {
+    this.segmentData = data;
+    console.log(this.segmentData);
+  },
+  error => {
+    console.log(error);
+  }
+);
 }
 }
+
 

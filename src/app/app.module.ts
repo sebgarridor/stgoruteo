@@ -31,6 +31,7 @@ import { FormsModule } from '@angular/forms';
 import { MisionComponent } from './mision/mision.component';
 import { ComofuncionaComponent } from './comofunciona/comofunciona.component';
 import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import {MatCardModule} from '@angular/material/card';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
