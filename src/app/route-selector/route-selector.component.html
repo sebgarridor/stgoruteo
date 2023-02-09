@@ -12,27 +12,38 @@
 
     
   </div>
-    <div *ngIf="selectedZona">
-      <div *ngFor="let route of routes">
-        <div class="card mb-3" *ngIf="route.zona === selectedZona">
-          <div class="row no-gutters">
-            <div class="col-md-8">
-              <img class="card-img" [src]="route.imageUrl" />
-            </div>
-            <div class="col-md-4">
-            <h1 class="card-title">{{ route.name }}</h1>
-            <p class="card-text">Distancia: {{ route.distance }}km</p>
-            <p class="card-text">Pendiente promedio: {{ route.pendientePromedio }}%</p>
-            <p class="card-text">Elevación ganada: {{ route.elevationGain }}m</p>
-            <p class="card-text">Máxima elevación: {{ route.maxElevation }}m</p>
-            
-            
+  <div *ngIf="selectedZona">
+    <div *ngFor="let route of routes">
+      <div class="card mb-3" *ngIf="route.zona === selectedZona">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <img class="card-img" [src]="route.imageUrl" />
           </div>
+          <div class="col-md-4">
+          <h1 class="card-title">{{ route.name }}</h1>
+          <p class="card-text"> <strong> Distancia:</strong> {{ route.distance }}km</p>
+          <p class="card-text"><strong>Pendiente promedio:</strong> {{ route.pendientePromedio }}%</p>
+          <p class="card-text"><strong>Elevación ganada:</strong> {{ route.elevationGain }}m</p>
+          <p class="card-text"><strong>Máxima elevación:</strong> {{ route.maxElevation }}m</p>
+  
+          <button class="btn btn-primary" (click)="openModal(route)">More Info</button>
 
-          
-          </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
+  
+  <div *ngIf="showModal" class="modal">
+    <div class="modal-content">
+
+      <p>asd
+      </p>
+      <button (click)="showModal = false">X</button>
+    </div>
+  </div>
+</div>
+  
+
+
 </article>

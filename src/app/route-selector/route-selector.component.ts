@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  Output, EventEmitter  } from '@angular/core';
+import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
+
 
 class Route {
   name: string;
@@ -8,8 +10,9 @@ class Route {
   imageUrl: string;
   pendientePromedio: number;
   zona: string;
+  segmentId: number;
 
-  constructor(name: string, distance: number, elevationGain: number, maxElevation: number, imageUrl: string, zona: string, pendientePromedio: number) {
+  constructor(name: string, distance: number, elevationGain: number, maxElevation: number, imageUrl: string, zona: string, pendientePromedio: number, segmentId: number) {
     this.name = name;
     this.distance = distance;
     this.elevationGain = elevationGain;
@@ -17,7 +20,10 @@ class Route {
     this.imageUrl = imageUrl;
     this.zona = zona;
     this.pendientePromedio = pendientePromedio;
+    this.segmentId = segmentId;
   }
+
+  
 }
 
 
@@ -29,14 +35,14 @@ class Route {
 })
 export class RouteSelectorComponent  { 
   routes: Route[] = [
-  new Route("Route 1", 10, 100, 1000, "https://image1.jpg", "norte", 6),
-  new Route("Route 2", 20, 200, 2000, "https://image2.jpg", "norte", 6),
-  new Route("Route 3", 30, 300, 3000, "https://image3.jpg", "oriente", 6),
-  new Route("Route 4", 40, 400, 4000, "https://image4.jpg", "oriente", 6),
-  new Route("Cuesta Barriga", 6.02, 463, 696, "https://i.imgur.com/jT9z5G6.png", "poniente", 4.9),
-  new Route("Cuesta Lo Prado", 60, 600, 6000, "https://i.imgur.com/UrSrnxP.png", "poniente", 6),
-  new Route("Route 7", 70, 700, 7000, "https://image7.jpg", "sur", 6),
-  new Route("Route 8", 80, 800, 8000, "https://image8.jpg", "sur", 6),
+  new Route("Pie Andino Oriente ", 4.75, 251, 1123, "https://i.imgur.com/nC29pQ2.png", "norte", 5.1, 632958),
+  new Route("Cuesta Chabacuco", 10.79, 675, 1320, "https://i.imgur.com/7FQSN86.png", "norte", 6.1, 14390168),
+  new Route("Yerba Loca", 23.17, 1858, 1750, "https://image3.jpg", "oriente", 3.8, 13539244),
+  new Route("El Toyo", 21.37, 314, 1011, "https://image4.jpg", "oriente", 0.8, 1332501),
+  new Route("Cuesta Barriga", 6.02, 463, 696, "https://i.imgur.com/jT9z5G6.png", "poniente", 4.9, 1667042),
+  new Route("Cuesta Lo Prado", 5.44, 420, 793, "https://i.imgur.com/UrSrnxP.png", "poniente", 7.7, 18676329),
+  new Route("Cuesta Chada", 4.14, 251, 667, "https://image7.jpg", "sur", 6.1, 1289604),
+  new Route("Pirque - La Obra", 24.49, 280, 847, "https://image8.jpg", "sur", -0.1, 31818271),
 ];
 
 selectedZona: string;
@@ -45,6 +51,14 @@ selectZona(zona: string) {
   this.selectedZona = zona;
 }
 
+selectedRoute;
+showModal = false;
 
+// other properties
 
+openModal(route) {
+  this.selectedRoute = route;
+  this.showModal = true;
 }
+}
+

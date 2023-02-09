@@ -19,7 +19,7 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
-
+import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
 
 //Rest of Modules
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -40,7 +40,7 @@ import {MatCardModule} from '@angular/material/card';
     InfinitesliderComponent,
     RouteSelectorComponent,
     MisionComponent,
-    ComofuncionaComponent
+    ComofuncionaComponent,
   ],
   imports: [
     BrowserModule,
