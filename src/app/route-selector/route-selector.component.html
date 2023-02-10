@@ -14,7 +14,7 @@
   </div>
   <div *ngIf="selectedZona">
     <div *ngFor="let route of routes">
-      <div class="card mb-3" *ngIf="route.zona === selectedZona">
+      <div class="shadow-none card mb-3" *ngIf="route.zona === selectedZona">
         <div class="row no-gutters">
           <div class="col-md-8">
             <img class="card-img" [src]="route.imageUrl" />
@@ -26,7 +26,7 @@
           <p class="card-text"><strong>Elevación ganada:</strong> {{ route.elevationGain }}m</p>
           <p class="card-text"><strong>Máxima elevación:</strong> {{ route.maxElevation }}m</p>
   
-          <button class="btn btn-primary" (click)="openModal(route)">More Info</button>
+          <button class="button-52" role="button" (click)="openModal(route)">más info</button>
 
         </div>
       </div>
@@ -36,13 +36,13 @@
   
   <div *ngIf="showModal" class="modal">
     <div class="modal-content">
-      <h2>{{ segmentData.name }}</h2>
-      <p>Distance: {{ segmentData.distance }}</p>
-      <p>City: {{ segmentData.city }}</p>
+      <h2 class="segment-title">{{ segmentData.name }}</h2>
+      <p class="segment-info">Distancia: {{ segmentData.distance }}</p>
+      <p class="segment-info">Ciudad: {{ segmentData.city }}</p>
 
       <p>asd
       </p>
-      <button (click)="showModal = false">X</button>
+      <button class="close-button" (click)="showModal = false">cerrar</button>
     </div>
   </div>
 </div>

@@ -83,11 +83,62 @@ article {
     
     .modal-content {
       background-color: white !important;
-      padding: 20px !important;
+      padding: 2rem !important;
       border-radius: 10px !important;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) !important;
       width: 80% !important;
-      max-width: 500px !important;
+      max-width: 50rem !important;
+    }
+
+    .close-button {
+      cursor: pointer;
+      width: 5%;
+      border: 0px;
+      background-color: white;
+      margin: auto;
+    }
+
+    .segment-info {
+      font-family: $mainfont;
+    }
+    
+
+    .button-52 {
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 13px 20px 13px;
+      outline: 0;
+      border: 1px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-52:after {
+      content: "";
+      background-color:#B9B9B9;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.5s;
+    }
+    
+    .button-52:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+    
+    @media (min-width: 768px) {
+      .button-52 {
+        padding: 13px 50px 13px;
+      }
     }
     
 }
