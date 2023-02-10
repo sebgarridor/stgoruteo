@@ -21,11 +21,7 @@
           </div>
           <div class="col-md-4">
           <h1 class="card-title">{{ route.name }}</h1>
-          <p class="card-text"> <strong> Distancia:</strong> {{ route.distance }}km</p>
-          <p class="card-text"><strong>Pendiente promedio:</strong> {{ route.pendientePromedio }}%</p>
-          <p class="card-text"><strong>Elevación ganada:</strong> {{ route.elevationGain }}m</p>
-          <p class="card-text"><strong>Máxima elevación:</strong> {{ route.maxElevation }}m</p>
-  
+
           <button class="button-52" role="button" (click)="openModal(route)">más info</button>
 
         </div>
@@ -36,12 +32,18 @@
   
   <div *ngIf="showModal" class="modal">
     <div class="modal-content">
-      <h2 class="segment-title">{{ segmentData.name }}</h2>
-      <p class="segment-info">Distancia: {{ segmentData.distance }}</p>
-      <p class="segment-info">Ciudad: {{ segmentData.city }}</p>
+      <p class="segment-info"><strong>Distancia: </strong>  {{distanceInKilometers}} km</p>
+      <p class="segment-info"><strong>Elevación mínima: </strong>  {{segmentData.elevation_low}} m</p>
+      <p class="segment-info"><strong>Elevación máxima: </strong>  {{segmentData.elevation_high}} m</p>
+      <p class="segment-info"><strong>Elevación ganada: </strong>  {{segmentData.total_elevation_gain}} m</p>
 
-      <p>asd
-      </p>
+      <p class="segment-info"><strong>Pendiente promedio:</strong>  {{ segmentData.average_grade }} %</p>
+      <p class="segment-info"><strong>Pendiente máxima: </strong>  {{segmentData.maximum_grade}} %</p>
+      <p class="segment-info"><strong>Mayor intentos:</strong>  {{ segmentData.local_legend.title }}</p>
+      <p class="segment-info"><strong>Cantidad de intentos:</strong>  {{ segmentData.local_legend.effort_count }} intentos en los últimos 90 días.</p>
+      <p class="segment-info"><strong>Tiempo KOM:</strong>  {{ segmentData.xoms.overall}} minutos</p>
+      <p class="segment-info"> <small>*info extraída de strava, datos pueden ser no tan certeros.</small> </p>
+
       <button class="close-button" (click)="showModal = false">cerrar</button>
     </div>
   </div>

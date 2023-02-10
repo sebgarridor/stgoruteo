@@ -52,6 +52,7 @@ selectedRoute: any;
 showModal = false;
 segmentData: any;
 weatherData: any;
+distanceInKilometers: number;
 
 
 //inyecting httpclient
@@ -76,6 +77,7 @@ const stravaUrl = `https://www.strava.com/api/v3/segments/${segmentId}?access_to
 this.http.get(stravaUrl).subscribe(
   data => {
     this.segmentData = data;
+    this.distanceInKilometers = this.segmentData.distance / 1000;
     console.log(this.segmentData);
   },
   error => {
