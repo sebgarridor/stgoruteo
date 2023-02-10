@@ -1,4 +1,4 @@
-import { Component, OnInit,  Output, EventEmitter  } from '@angular/core';
+import { Component, OnInit,  Output, EventEmitter, ErrorHandler  } from '@angular/core';
 import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
 import { HttpClient } from '@angular/common/http';
 
@@ -51,6 +51,7 @@ selectedZona: string;
 selectedRoute: any;
 showModal = false;
 segmentData: any;
+weatherData: any;
 
 
 //inyecting httpclient
@@ -68,11 +69,11 @@ this.showModal = true;
 
 //
 // making the api call, subscribe is deprecated but still working
-const token = 'f29bdbfc1b5808e1eb2cca9d3e685b04adabd8e0';
+const stravaToken = 'f29bdbfc1b5808e1eb2cca9d3e685b04adabd8e0';
 const segmentId = this.selectedRoute.segmentId;
-const url = `https://www.strava.com/api/v3/segments/${segmentId}?access_token=${token}`;
+const stravaUrl = `https://www.strava.com/api/v3/segments/${segmentId}?access_token=${stravaToken}`;
 
-this.http.get(url).subscribe(
+this.http.get(stravaUrl).subscribe(
   data => {
     this.segmentData = data;
     console.log(this.segmentData);
@@ -81,7 +82,23 @@ this.http.get(url).subscribe(
     console.log(error);
   }
 );
+
+//making the api call to the weatherapi
+
+const weatherToken = '93a4be79ca57d67dbad87a098a9d8333';
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${weatherToken}`;
+
+this.http.get(weatherUrl)
+      .subscribe((data) => {
+        this.weatherData = data;
+        console.log(this.weatherData);
+      },
+      error => {
+        console.log(error);
+      }
+      );
+  }
 }
-}
+
 
 
