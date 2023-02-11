@@ -65,17 +65,16 @@ this.selectedZona = zona;
 //function to make the modal popup and printing the object to see if it works
 openModal(route) {
 this.selectedRoute = route;
-console.log(this.selectedRoute);
+console.log(this.selectedRoute); //checking if it returns the object
 this.showModal = true;
 
 //
 // making the api call, subscribe is deprecated but still working
-const stravaToken = 'f29bdbfc1b5808e1eb2cca9d3e685b04adabd8e0';
+const stravaToken = 'a21e168483621721fc2f38412ec16ed7fc3a455e';
 const segmentId = this.selectedRoute.segmentId;
 const stravaUrl = `https://www.strava.com/api/v3/segments/${segmentId}?access_token=${stravaToken}`;
 
-this.http.get(stravaUrl).subscribe(
-  data => {
+this.http.get(stravaUrl).subscribe(data => {
     this.segmentData = data;
     this.distanceInKilometers = this.segmentData.distance / 1000;
     console.log(this.segmentData);
@@ -87,12 +86,11 @@ this.http.get(stravaUrl).subscribe(
 
 //making the api call to the weatherapi
 
-const weatherToken = '93a4be79ca57d67dbad87a098a9d8333';
-const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${weatherToken}`;
+const weatherToken = '4780381ff8917a65ef1b3822f249d2e1';
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=-33.669&lon=-70.354&appid=${weatherToken}&units=metric`;
 
-this.http.get(weatherUrl)
-      .subscribe((data) => {
-        this.weatherData = data;
+this.http.get(weatherUrl).subscribe(tiempoData => {
+        this.weatherData = tiempoData;
         console.log(this.weatherData);
       },
       error => {
