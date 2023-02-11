@@ -47,7 +47,7 @@ article {
     .card-title {
         font-family: $mainfont;
         letter-spacing: 0.5rem;
-        margin-top: 50%
+        margin-top: 25%
         
     }
 
@@ -79,7 +79,36 @@ article {
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
+      -webkit-animation: modal 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: modal 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+
+    @-webkit-keyframes modal {
+      0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+    @keyframes modal {
+      0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+
+    
     
     .modal-content {
       background-color: white !important;
@@ -135,6 +164,12 @@ article {
     .button-52:hover:after {
       top: 0px;
       left: 0px;
+    }
+
+    .modal-title {
+      font-family: $mainfont;
+      letter-spacing: 0.5rem;
+
     }
     
     @media (min-width: 768px) {

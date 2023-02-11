@@ -32,6 +32,8 @@
   
   <div *ngIf="showModal" class="modal">
     <div class="modal-content">
+      <h2 class="modal-title">información segmento</h2>
+      <hr class="hr hr-blurry" />
       <p class="segment-info"><strong>Distancia: </strong>  {{distanceInKilometers}} km</p>
       <p class="segment-info"><strong>Elevación máxima: </strong>  {{segmentData.elevation_high}} m</p>
       <p class="segment-info"><strong>Elevación ganada: </strong>  {{segmentData.total_elevation_gain}} m</p>
@@ -43,7 +45,8 @@
       <p class="segment-info"><strong>Tiempo KOM:</strong>  {{ segmentData.xoms.overall}} minutos</p>
       <p class="segment-info"> <small>*info extraída de strava, datos pueden ser no tan certeros.</small> </p>
 
-      <h2>información metereológica</h2>
+      <h2 class="modal-title">información metereológica</h2>
+      <hr class="hr hr-blurry" />
       <p class="segment-info"><strong>Temperatura: </strong>  {{weatherData.main.temp}} °C</p> 
       <p class="segment-info"><strong>Viento: </strong>  {{weatherData.main.temp}} °C</p> 
 
