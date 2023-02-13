@@ -6,6 +6,11 @@
 
 $animationSpeed: 40s;
 
+section {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+}
+
 // Animation
 @keyframes scroll {
 	0% { transform: translateX(0); }
@@ -25,7 +30,7 @@ $animationSpeed: 40s;
 
 	height: 8.5rem;
 	margin: auto;
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
 	overflow:hidden;
 	position: relative;
 	width: 960px;
