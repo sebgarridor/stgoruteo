@@ -3,6 +3,7 @@
 $fontfamily-nav: 'Unbounded', cursive;
 
 nav {
+    
 
     a {
         position: relative;
@@ -49,11 +50,7 @@ nav {
         cursor: pointer;
     }
     
-    /* 
-    ========================
-          BUTTON ONE
-    ========================
-    */
+
     .btn-one {
         color: black;
         transition: all 0.3s;

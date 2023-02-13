@@ -1,13 +1,17 @@
 <article>
   <div class="container">
     <div class="route-container">
-    <select class="route-selector" #zonaSelector (change)="selectZona(zonaSelector.value)">
-      <option value="">Selecciona una zona de Santiago</option>
-      <option value="norte">Zona Norte</option>
-      <option value="oriente">Zona Oriente</option>
-      <option value="poniente">Zona Poniente</option>
-      <option value="sur">Zona Sur</option>
-    </select>
+      <div class="route-select" >
+        <select class="s-hidden" #zonaSelector (change)="selectZona(zonaSelector.value)">
+          <option value="">selecciona una zona</option>
+          <option value="norte">Zona Norte</option>
+          <option value="oriente">Zona Oriente</option>
+          <option value="poniente">Zona Poniente</option>
+          <option value="sur">Zona Sur</option>
+        </select>
+        
+      </div>
+
     
 
     

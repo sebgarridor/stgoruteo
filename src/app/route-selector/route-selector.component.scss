@@ -64,9 +64,57 @@ article {
         margin: 3rem 0rem;
     }
 
-    .route-selector {
-        border: 0px;
+    select {
+      padding: 1em 4em 1em 1.5em;
+      font-family: $mainfont;
+      border: 1px solid;
+      background-color: transparent;
+
+      option {
+        margin-top: 5rem;
+      }
     }
+
+    .route-select {
+      position: relative;
+    }
+
+    .custom-arrow {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #B1BDC5;
+      display: block;
+      height: 100%;
+      width: 4rem;
+      pointer-events: none;
+    }
+
+    .custom-arrow::before,
+    .custom-arrow:after {
+      --size: 1em;
+      content: '';
+      position:absolute;
+      width: 0;
+      height: 0;
+
+      left: 50%;
+      transform: translate();
+
+    }
+
+    .custom-arrow::before {
+      border-left: var(--size) solid transparent ;
+      border-right: var(--size) solid transparent ;
+      border-bottom: var(--size) solid #628281;
+    }
+
+    .custom-arrow::after {
+      border-left: var(--size) solid transparent ;
+      border-right: var(--size) solid transparent ;
+      border-top: var(--size) solid #628281;
+    }
+
 
     .modal {
       position: fixed !important;
@@ -177,6 +225,9 @@ article {
       height: 65%;
       margin: auto;
     }
+
+
+    
     
     @media (min-width: 768px) {
       .button-52 {

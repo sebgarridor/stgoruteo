@@ -55,6 +55,22 @@ weatherData: any;
 distanceInKilometers: number;
 
 
+options = ['selecciona una zona', 'Zona Norte', 'Zona Oriente', 'Zona Poniente', 'Zona Sur'];
+defaultOption = this.options[0];
+selectedOption: string;
+showList = false;
+
+toggleList() {
+  this.showList = !this.showList;
+}
+
+selectOption(option: string) {
+  this.selectedOption = option;
+  this.defaultOption = option;
+  this.showList = false;
+}
+
+
 //inyecting httpclient
 constructor(private http: HttpClient) {}
 
