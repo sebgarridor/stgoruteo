@@ -1,3 +1,17 @@
 footer {
     background-color: #889FA5;
+    color: white;
+
+    .footer-section {
+        padding: 2rem 3rem;
+        text-align: center;
+
+    }
+
+    .rrss {
+        gap: 50px;
+        padding: 2rem;
+        display: inline-block;
+
+    }
 }
