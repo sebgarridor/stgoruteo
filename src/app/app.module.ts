@@ -32,6 +32,8 @@ import { MisionComponent } from './mision/mision.component';
 import { ComofuncionaComponent } from './comofunciona/comofunciona.component';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { PagefooterComponent } from './pagefooter/pagefooter.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     RouteSelectorComponent,
     MisionComponent,
     ComofuncionaComponent,
+    PagefooterComponent,
+    SubscribeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<section>
+    <div class="subscribe-info">
+        <div class="subscribe-title">
+            <h2>suscribete a nuestro newsletter!</h2>
+          </div>
+          <div class="subscribe-info">
+            <p>te informaremos de nuevas actualizaciones y funcionalidades de nuestro sitio web!</p>
+          </div>
+    </div>
+
+  <form>
+    <input
+      type="email"
+      id="email"
+      [(ngModel)]="email"
+      (keydown)="checkEmail()"
+    />
+    <label for="email">ingresa tu correo</label>
+    <button id="button" (click)="submit()">O K</button>
+  </form>
+</section>
