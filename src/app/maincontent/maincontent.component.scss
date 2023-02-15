@@ -3,6 +3,14 @@
 $pic-width: 95%;
 $h1-font: 'Prompt', sans-serif;
 
+$slides: 3;
+
+// how much we want each slide to show
+$time_per_slide: 4;
+
+// total time needed for full animation
+$total_animation_time: $time_per_slide * $slides;
+
 main {
 
     margin-top: 10rem;
@@ -38,12 +46,15 @@ main {
       
     
 
-    .first-pic {
+    .photo {
         width: $pic-width;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         border-radius: 1rem;
         margin-bottom: 2rem;
+
     }
+
+    
 
 
     .intro-title {
