@@ -55,7 +55,7 @@ weatherData: any;
 distanceInKilometers: number;
 
 
-options = ['selecciona una zona', 'Zona Norte', 'Zona Oriente', 'Zona Poniente', 'Zona Sur'];
+options = ['selecciona una zona', 'zona norte', 'zona oriente', 'zona poniente', 'zona sur'];
 defaultOption = this.options[0];
 selectedOption: string;
 showList = false;

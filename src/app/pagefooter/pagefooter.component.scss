@@ -12,11 +12,18 @@ footer {
     }
 
     .rrss {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin: auto;
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        justify-content: center;
 
         img {
-            margin-right: 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
 
