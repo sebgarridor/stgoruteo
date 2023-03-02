@@ -13,7 +13,8 @@
   form {
     position: relative;
     margin: auto;
-    width: 34rem;
+
+    width: 100%;
     height: 5rem;
     margin-top: 1rem !important;
   }
@@ -66,7 +67,7 @@
   button {
     position: absolute;
     right: 0;
-    width: 7.5rem;
+    width: 20%;
     height: 100%;
     border: 0;
     border-radius: 4px;
@@ -97,6 +98,7 @@ section {
 
     margin: auto;
     margin-top: 15rem !important;
+    width: 50%;
 
 
     .subscribe-title {
@@ -113,6 +115,27 @@ section {
 
         font-family: "Unbounded", cursive;
     }
+}
+
+@media (max-width: 1024px) {
+
+  .form {
+
+  }
+
+  section {
+    margin: auto;
+    width: 90%;
+
+    .subscribe-title {
+      color: #4f4f4f;
+      font-family: "Unbounded", cursive;
+      text-align: center;
+      letter-spacing: 0.8rem;
+
+  }
+  }
+
 }
   
   
