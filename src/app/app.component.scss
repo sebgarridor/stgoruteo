@@ -5,3 +5,12 @@ $backgroundcolor: white;
 body {
     background-color: $backgroundcolor;
 }
+
+@media (max-width: 1024px) {
+
+
+    body {
+        padding: 12rem 1rem;
+    }
+  
+  }

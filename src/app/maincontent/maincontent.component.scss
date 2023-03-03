@@ -17,7 +17,7 @@ main {
     background-color: white;
     -webkit-animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    height: 120%;
+    height: 100%;
 
     @-webkit-keyframes slide-in-left {
         0% {
@@ -71,4 +71,29 @@ main {
         text-align: right;
         justify-content: right;
     }
+}
+
+@media (max-width: 1024px) {
+
+  .intro-paragraph {
+    text-align: center !important;
+    justify-content: center;
+  }
+
+  .intro-title {
+    font-family: 'Unbounded', cursive;
+    font-weight: 300;
+    text-align: center !important;
+    letter-spacing: 0.9rem;
+}
+.photo {
+  width: 100% !important;
+  justify-content: center;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+
+}
+
 }
