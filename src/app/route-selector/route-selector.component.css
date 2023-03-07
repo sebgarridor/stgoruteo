@@ -20,8 +20,8 @@ article .card img {
 }
 article .card-title {
   font-family: "Unbounded", cursive;
-  letter-spacing: 0.5rem;
-  margin-top: 25%;
+  letter-spacing: 0.22rem;
+  margin-top: 0;
 }
 article .card-text {
   font-family: "Unbounded", cursive;
@@ -33,6 +33,9 @@ article .route-container {
   justify-content: center;
   align-items: center;
   margin: 3rem 0rem;
+}
+article p {
+  font-weight: 300;
 }
 article select {
   padding: 1em 4em 1em 1.5em;
@@ -132,7 +135,7 @@ article .button-52 {
        user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-top: 20%;
+  margin-top: 1rem;
 }
 article .button-52:after {
   content: "";
@@ -151,11 +154,11 @@ article .button-52:hover:after {
 }
 article .modal-title {
   font-family: "Unbounded", cursive;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0rem;
 }
 article #route-card {
-  width: 65%;
-  height: 65%;
+  width: 75%;
+  height: 75%;
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -170,7 +173,7 @@ article #route-card {
   }
   .card-title {
     font-family: "Unbounded", cursive;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     margin-top: 2rem;
   }
   .card-text {

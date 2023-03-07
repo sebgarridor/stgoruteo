@@ -46,8 +46,8 @@ article {
 
     .card-title {
         font-family: $mainfont;
-        letter-spacing: 0.5rem;
-        margin-top: 25%
+        letter-spacing: 0.22rem;
+        margin-top: 0;
         
     }
 
@@ -62,6 +62,10 @@ article {
         justify-content: center;
         align-items: center;
         margin: 3rem 0rem;
+    }
+
+    p {
+      font-weight: 300;
     }
 
     select {
@@ -194,7 +198,7 @@ article {
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-      margin-top: 20%;
+      margin-top: 1rem;
     }
     
     .button-52:after {
@@ -216,13 +220,13 @@ article {
 
     .modal-title {
       font-family: $mainfont;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0rem;
 
     }
 
     #route-card {
-      width: 65%;
-      height: 65%;
+      width: 75%;
+      height: 75%;
       margin: auto;
     }
 
@@ -247,7 +251,7 @@ article {
 
   .card-title {
     font-family: $mainfont;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     margin-top: 2rem;
     
 }

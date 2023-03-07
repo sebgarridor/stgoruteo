@@ -24,7 +24,8 @@
             <img class="card-img" [src]="route.imageUrl" />
           </div>
           <div class="col-md-4">
-          <h1 class="card-title">{{ route.name }}</h1>
+          <h3 class="card-title">{{ route.name }}</h3>
+          <p class="route-description"> {{route.descripcion}}</p>
          
 
           <button class="button-52" role="button" (click)="openModal(route)">más info</button>

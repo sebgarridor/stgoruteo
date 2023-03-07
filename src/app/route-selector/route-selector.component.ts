@@ -45,7 +45,7 @@ export class RouteSelectorComponent  {
   new Route("El Toyo", 21.37, 314, 1011, "https://i.imgur.com/EYAPA8C.png", "oriente", 0.8, 1332501, "De las rutas más conocidas y bellas, funciona como ruta de acceso hacia el Cajón del Maipo."),
   new Route("Cuesta Barriga", 6.02, 463, 696, "https://i.imgur.com/jT9z5G6.png", "poniente", 4.9, 1667042, "Conocido como el patio del Poniente, es la ruta más usada por los ciclistas del sector poniente de la ciudad."),
   new Route("Cuesta Lo Prado", 5.44, 420, 793, "https://i.imgur.com/UrSrnxP.png", "poniente", 7.7, 18676329, "Otra ruta conocida del poniente, con accesos desde la ruta 68, o también desde el interior."),
-  new Route("Cuesta Chada", 4.14, 251, 667, "https://i.imgur.com/wGcgdua.png", "sur", 6.1, 1289604, "Ubicada en el límite regional entre la RM y la VI Región."),
+  new Route("Cuesta Chada", 4.14, 251, 667, "https://i.imgur.com/wGcgdua.png", "sur", 6.1, 1289604, "Ubicada en el límite regional entre la RM y la VI Región, conectando a San Francisco de Mostazal."),
   new Route("Pirque - La Obra", 24.49, 280, 847, "https://i.imgur.com/Ok09ROE.png", "sur", -0.1, 31818271, "Ruta que conecta Pirque y el Toyo, pasando por los bellos paisajes del interior de Pirque."),
 ];
 
