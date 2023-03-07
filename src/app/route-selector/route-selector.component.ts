@@ -13,8 +13,9 @@ class Route {
   pendientePromedio: number;
   zona: string;
   segmentId: number;
+  descripcion: string;
 
-  constructor(name: string, distance: number, elevationGain: number, maxElevation: number, imageUrl: string, zona: string, pendientePromedio: number, segmentId: number) {
+  constructor(name: string, distance: number, elevationGain: number, maxElevation: number, imageUrl: string, zona: string, pendientePromedio: number, segmentId: number, descripcion: string) {
     this.name = name;
     this.distance = distance;
     this.elevationGain = elevationGain;
@@ -23,6 +24,7 @@ class Route {
     this.zona = zona;
     this.pendientePromedio = pendientePromedio;
     this.segmentId = segmentId;
+    this.descripcion = descripcion;
   }
 
   
@@ -37,14 +39,14 @@ class Route {
 })
 export class RouteSelectorComponent  { 
   routes: Route[] = [
-  new Route("Pie Andino Oriente ", 4.75, 251, 1123, "https://i.imgur.com/nC29pQ2.png", "norte", 5.1, 632958),
-  new Route("Cuesta Chabacuco", 10.79, 675, 1320, "https://i.imgur.com/7FQSN86.png", "norte", 6.1, 14390168),
-  new Route("Yerba Loca", 23.17, 1858, 1750, "https://i.imgur.com/BMgBIAO.png ", "oriente", 3.8, 13539244),
-  new Route("El Toyo", 21.37, 314, 1011, "https://i.imgur.com/EYAPA8C.png", "oriente", 0.8, 1332501),
-  new Route("Cuesta Barriga", 6.02, 463, 696, "https://i.imgur.com/jT9z5G6.png", "poniente", 4.9, 1667042),
-  new Route("Cuesta Lo Prado", 5.44, 420, 793, "https://i.imgur.com/UrSrnxP.png", "poniente", 7.7, 18676329),
-  new Route("Cuesta Chada", 4.14, 251, 667, "https://i.imgur.com/wGcgdua.png", "sur", 6.1, 1289604),
-  new Route("Pirque - La Obra", 24.49, 280, 847, "https://i.imgur.com/Ok09ROE.png", "sur", -0.1, 31818271),
+  new Route("Pie Andino Oriente ", 4.75, 251, 1123, "https://i.imgur.com/nC29pQ2.png", "norte", 5.1, 632958, "Ubicado en el nororiente de Santiago, conecta el sector oriente con Chicureo."),
+  new Route("Cuesta Chabacuco", 10.79, 675, 1320, "https://i.imgur.com/7FQSN86.png", "norte", 6.1, 14390168, "En el límite regional entre la RM y la V Región, es una ruta para ruteros experimentados debido a su lejanía."),
+  new Route("Yerba Loca", 23.17, 1858, 1750, "https://i.imgur.com/BMgBIAO.png ", "oriente", 3.8, 13539244, "Clásico para quienes disfrutan de la Cordillera de los Andes, ubicada en la curva 15 del Camino a Farellones"),
+  new Route("El Toyo", 21.37, 314, 1011, "https://i.imgur.com/EYAPA8C.png", "oriente", 0.8, 1332501, "De las rutas más conocidas y bellas, funciona como ruta de acceso hacia el Cajón del Maipo."),
+  new Route("Cuesta Barriga", 6.02, 463, 696, "https://i.imgur.com/jT9z5G6.png", "poniente", 4.9, 1667042, "Conocido como el patio del Poniente, es la ruta más usada por los ciclistas del sector poniente de la ciudad."),
+  new Route("Cuesta Lo Prado", 5.44, 420, 793, "https://i.imgur.com/UrSrnxP.png", "poniente", 7.7, 18676329, "Otra ruta conocida del poniente, con accesos desde la ruta 68, o también desde el interior."),
+  new Route("Cuesta Chada", 4.14, 251, 667, "https://i.imgur.com/wGcgdua.png", "sur", 6.1, 1289604, "Ubicada en el límite regional entre la RM y la VI Región."),
+  new Route("Pirque - La Obra", 24.49, 280, 847, "https://i.imgur.com/Ok09ROE.png", "sur", -0.1, 31818271, "Ruta que conecta Pirque y el Toyo, pasando por los bellos paisajes del interior de Pirque."),
 ];
 
 selectedZona: string;
