@@ -54,7 +54,8 @@
       <h2 class="modal-title">Información metereológica</h2>
       <hr class="hr hr-blurry" />
       <p class="segment-info"><strong>Temperatura: </strong>  {{weatherData.main.temp}} °C</p> 
-      <p class="segment-info"><strong>Viento: </strong>  {{weatherData.main.temp}} °C</p> 
+      <p class="segment-info"><strong>Viento: </strong>  {{weatherData.wind.speed}} km/h</p> 
+      <p class="segment-info"><strong>Humedad: </strong>  {{weatherData.main.humidity}} %</p> 
 
       <button class="close-button" (click)="showModal = false">cerrar</button>
     </div>
