@@ -1,61 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
-
-$mainfont: "Unbounded", cursive;
-
 article {
-
-
-    margin-top: 20rem;
-
-
-
-  .comofunciona-title {
-    font-family: $mainfont;
-    font-weight: 300;
-
-    letter-spacing: 0.9rem;
-    text-align: center;
-  }
-
-  .comofunciona-paragraph {
-    font-family: $mainfont;
-    font-size: 1.05rem;
-    text-align: center;
-    justify-content: center;
-    width: 50%;
-    margin: auto;
-    margin-top: 2rem;
-
-
-  }
+  margin-top: 20rem;
+}
+article .comofunciona-title {
+  font-family: "Unbounded", cursive;
+  font-weight: 300;
+  letter-spacing: 0.9rem;
+  text-align: center;
+}
+article .comofunciona-paragraph {
+  font-family: "Unbounded", cursive;
+  font-size: 1.05rem;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1024px) {
-
   article {
     margin-top: 4rem;
   }
-
   .comofunciona-title {
-    font-family: $mainfont;
+    font-family: "Unbounded", cursive;
     font-weight: 300;
     text-align: center !important;
     letter-spacing: 0.9rem;
-
   }
-
   .comofunciona-paragraph {
-    font-family: $mainfont;
+    font-family: "Unbounded", cursive;
     font-size: 1.05rem;
     text-align: center;
     justify-content: center;
     width: 100% !important;
     margin: auto;
     margin-top: 2rem;
-
-
   }
-
-
-
-}
+}/*# sourceMappingURL=comofunciona.component.css.map */

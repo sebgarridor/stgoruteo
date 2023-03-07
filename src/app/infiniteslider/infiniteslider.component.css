@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
+section {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+.slider-title {
+  margin-top: 4rem;
+  text-align: center;
+  font-family: "Unbounded", cursive;
+  letter-spacing: 0.8rem;
+}
+
+.slider {
+  background: white;
+  height: 8.5rem;
+  margin: auto;
+  margin-top: 1rem !important;
+  overflow: hidden;
+  position: relative;
+  width: 60%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 2800px;
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+.slider .slide img {
+  filter: grayscale(100%);
+}/*# sourceMappingURL=infiniteslider.component.css.map */

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
+main {
+  margin-top: 10rem;
+  background-color: white;
+  animation: slide-in-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  height: 100%;
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+main .photo {
+  width: 95%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+main .intro-title {
+  font-family: "Unbounded", cursive;
+  font-weight: 300;
+  text-align: right;
+  letter-spacing: 0.9rem;
+}
+main .intro-paragraph {
+  font-family: "Unbounded", cursive;
+  font-size: 1.1rem;
+  font-weight: 200;
+  text-align: right;
+  justify-content: right;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 3rem;
+  }
+  .intro-paragraph {
+    text-align: center !important;
+    justify-content: center;
+  }
+  .intro-title {
+    font-family: "Unbounded", cursive;
+    font-weight: 300;
+    text-align: center !important;
+    letter-spacing: 0.9rem;
+  }
+  .photo {
+    width: 100% !important;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=maincontent.component.css.map */

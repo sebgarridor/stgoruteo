@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
+article {
+  margin-top: 20rem;
+  background-color: white;
+  animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+article .first-pic {
+  width: 95%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+  margin-left: 2.7rem;
+}
+article .mision-title {
+  font-family: "Unbounded", cursive;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0.9rem;
+}
+article .mision-paragraph {
+  font-family: "Unbounded", cursive;
+  font-size: 1.05rem;
+  font-weight: 200;
+  text-align: left;
+  justify-content: left;
+}
+
+@media (max-width: 1024px) {
+  article {
+    margin-top: 3rem;
+  }
+  .mision-title {
+    font-family: "Unbounded", cursive;
+    font-weight: 300;
+    text-align: center !important;
+    letter-spacing: 0rem;
+  }
+  .mision-paragraph {
+    font-family: "Unbounded", cursive;
+    font-size: 1.05rem;
+    font-weight: 200;
+    text-align: center !important;
+    justify-content: left;
+  }
+  .first-pic {
+    width: 100% !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 1rem;
+    margin-left: 0rem !important;
+  }
+}/*# sourceMappingURL=mision.component.css.map */

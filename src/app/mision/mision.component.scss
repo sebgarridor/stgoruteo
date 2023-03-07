@@ -57,3 +57,34 @@ article {
         justify-content: left;
     }
 }
+
+@media (max-width: 1024px) {
+
+  article {
+    margin-top: 3rem;
+  }
+
+  .mision-title {
+    font-family: $mainfont;
+    font-weight: 300;
+    text-align: center !important;
+    letter-spacing: 0rem;
+}
+
+.mision-paragraph {
+  font-family: $mainfont;
+  font-size: 1.05rem;
+  font-weight: 200;
+  text-align: center !important;
+  
+  justify-content: left;
+}
+
+.first-pic {
+  width: 100% !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+  margin-left: 0rem !important;
+}
+
+}

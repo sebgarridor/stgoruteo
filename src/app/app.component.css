@@ -1,0 +1,9 @@
+body {
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 12rem 1rem;
+  }
+}/*# sourceMappingURL=app.component.css.map */
