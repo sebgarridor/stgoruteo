@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Prompt:wght@300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
+form {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem !important;
+}
+
+input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border: 0;
+  border-radius: 4px;
+  background: #DADDE2;
+  outline: 0;
+  padding: 2em 1em 1em 1em;
+  color: black;
+  font-family: "Unbounded", cursive;
+  font-size: 1em;
+  transition: background 0.35s ease-out;
+}
+input::-webkit-input-placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+input:-moz-placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+input::-moz-placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+input:-ms-input-placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+input:focus {
+  background: #DADDE2;
+}
+input:focus + label {
+  transform: translateY(-10px) scale(0.8);
+  color: black;
+}
+input:focus + label + button {
+  opacity: 1;
+}
+
+label {
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  margin-top: -1rem;
+  color: black;
+  font-family: "Unbounded", cursive;
+  letter-spacing: 0.3rem;
+  transform-origin: left center;
+  transition: transform 0.25s ease-out, color 0.25s ease-out;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #B1BDC5;
+  font-family: "Unbounded", cursive;
+  color: black;
+  cursor: pointer;
+  opacity: 0;
+  outline: none;
+  transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out;
+}
+
+button.is-active {
+  background: #B1BDC5;
+  color: black;
+  font-family: "Unbounded", cursive;
+}
+
+button.is-done {
+  width: 100%;
+  opacity: 1;
+  letter-spacing: 0.2rem;
+}
+
+section {
+  margin: auto;
+  margin-top: 15rem !important;
+  width: 50%;
+}
+section .subscribe-title {
+  color: #4f4f4f;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  letter-spacing: 0.8rem;
+}
+section .subscribe-info {
+  color: #4f4f4f;
+  text-align: center;
+  font-family: "Unbounded", cursive;
+}
+
+@media (max-width: 1024px) {
+  section {
+    margin: auto;
+    width: 80%;
+    margin-top: 4rem !important;
+  }
+  section .subscribe-title {
+    color: #4f4f4f;
+    font-family: "Unbounded", cursive;
+    text-align: center;
+    letter-spacing: 0.8rem;
+  }
+}/*# sourceMappingURL=subscribe.component.css.map */
