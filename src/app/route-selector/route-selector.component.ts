@@ -88,7 +88,7 @@ this.showModal = true;
 
 //
 // making the api call, subscribe is deprecated but still working
-const stravaToken = 'f2b65bfcb24b41205360eee94b5b7c839e2f5495';
+const stravaToken = 'e195bdd00b285473a994327c62a1f5264953b3bc';
 const segmentId = this.selectedRoute.segmentId;
 const stravaUrl = `https://www.strava.com/api/v3/segments/${segmentId}?access_token=${stravaToken}`;
 
@@ -104,7 +104,7 @@ this.http.get(stravaUrl).subscribe(data => {
 
 //making the api call to the weatherapi
 
-const weatherToken = '4780381ff8917a65ef1b3822f249d2e1';
+const weatherToken = '35ccbcec23612074f938e5f8cd310a37';
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=-33.669&lon=-70.354&appid=${weatherToken}&units=metric`;
 
 this.http.get(weatherUrl).subscribe(tiempoData => {
