@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200&display=swap');
+
 $backgroundcolor: white;
+$unbounded: 'Unbounded', cursive;
+
 
 
 
 body {
     background-color: $backgroundcolor;
+}
+
+p {
+    font-family: $unbounded;
+    font-weight: 400;
 }
 
 @media (max-width: 1024px) {
