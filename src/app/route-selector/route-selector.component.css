@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Playfair+Display:wght@400;700&family=Prompt:wght@100;200;300&family=Roboto:wght@300&family=Shadows+Into+Light&family=Unbounded:wght@200;300;400&display=swap");
+article .card {
+  padding: 2rem;
+  box-shadow: 0px !important;
+  animation: slide-in-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+article .card img {
+  width: 100%;
+  border-radius: 2px;
+}
+article .card-title {
+  font-family: "Unbounded", cursive;
+  letter-spacing: 0.5rem;
+  margin-top: 25%;
+}
+article .card-text {
+  font-family: "Unbounded", cursive;
+  margin-bottom: 3.5rem;
+  margin-top: 4rem;
+}
+article .route-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0rem;
+}
+article select {
+  padding: 1em 4em 1em 1.5em;
+  font-family: "Unbounded", cursive;
+  border: 1px solid;
+  background-color: transparent;
+}
+article select option {
+  margin-top: 5rem;
+}
+article .route-select {
+  position: relative;
+}
+article .custom-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #B1BDC5;
+  display: block;
+  height: 100%;
+  width: 4rem;
+  pointer-events: none;
+}
+article .custom-arrow::before,
+article .custom-arrow:after {
+  --size: 1em;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  transform: translate();
+}
+article .custom-arrow::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid #628281;
+}
+article .custom-arrow::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid #628281;
+}
+article .modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 10 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: modal 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes modal {
+  0% {
+    transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+article .modal-content {
+  background-color: white !important;
+  padding: 2rem !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) !important;
+  width: 80% !important;
+  max-width: 50rem !important;
+}
+article .close-button {
+  cursor: pointer;
+  width: 5%;
+  border: 0px;
+  background-color: white;
+  margin: auto;
+}
+article .segment-info {
+  font-family: "Unbounded", cursive;
+}
+article .button-52 {
+  font-size: 16px;
+  font-family: "Unbounded", cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20%;
+}
+article .button-52:after {
+  content: "";
+  background-color: #B9B9B9;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.5s;
+}
+article .button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+article .modal-title {
+  font-family: "Unbounded", cursive;
+  letter-spacing: 0.5rem;
+}
+article #route-card {
+  width: 65%;
+  height: 65%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  article .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    padding: 0.2rem !important;
+  }
+  .card-title {
+    font-family: "Unbounded", cursive;
+    letter-spacing: 0.5rem;
+    margin-top: 2rem;
+  }
+  .card-text {
+    font-family: "Unbounded", cursive;
+    margin-bottom: 3.5rem;
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=route-selector.component.css.map */

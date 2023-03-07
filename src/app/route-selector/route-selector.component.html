@@ -3,7 +3,7 @@
     <div class="route-container">
       <div class="route-select" >
         <select class="s-hidden" #zonaSelector (change)="selectZona(zonaSelector.value)">
-          <option value="">selecciona una zona</option>
+          <option value="">Selecciona una zona</option>
           <option value="norte">Zona Norte</option>
           <option value="oriente">Zona Oriente</option>
           <option value="poniente">Zona Poniente</option>
@@ -37,7 +37,7 @@
   
   <div *ngIf="showModal" class="modal">
     <div class="modal-content">
-      <h2 class="modal-title">información segmento</h2>
+      <h2 class="modal-title">Información segmento</h2>
       <hr class="hr hr-blurry" />
       <p class="segment-info"><strong>Distancia: </strong>  {{distanceInKilometers}} km</p>
       <p class="segment-info"><strong>Elevación máxima: </strong>  {{segmentData.elevation_high}} m</p>
@@ -50,7 +50,7 @@
       <p class="segment-info"><strong>Tiempo KOM:</strong>  {{ segmentData.xoms.overall}} minutos</p>
       <p class="segment-info"> <small>*info extraída de strava, datos pueden ser no tan certeros.</small> </p>
 
-      <h2 class="modal-title">información metereológica</h2>
+      <h2 class="modal-title">Información metereológica</h2>
       <hr class="hr hr-blurry" />
       <p class="segment-info"><strong>Temperatura: </strong>  {{weatherData.main.temp}} °C</p> 
       <p class="segment-info"><strong>Viento: </strong>  {{weatherData.main.temp}} °C</p> 

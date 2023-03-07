@@ -234,5 +234,32 @@ article {
         padding: 13px 50px 13px;
       }
     }
+
     
+    
+}
+
+@media (max-width: 1024px) {
+
+  .card {
+    padding: 0.2rem !important;
+  }
+
+  .card-title {
+    font-family: $mainfont;
+    letter-spacing: 0.5rem;
+    margin-top: 2rem;
+    
+}
+
+.card-text {
+    font-family: $mainfont;
+    margin-bottom: 3.5rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
 }
