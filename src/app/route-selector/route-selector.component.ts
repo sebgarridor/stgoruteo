@@ -88,7 +88,7 @@ this.showModal = true;
 
 //
 // making the api call, subscribe is deprecated but still working
-const stravaToken = 'e195bdd00b285473a994327c62a1f5264953b3bc';
+const stravaToken = 'e0c3c01228b5ebe7b2921b1151e4e0d536ff98d8';
 const segmentId = this.selectedRoute.segmentId;
 const stravaUrl = `https://www.strava.com/api/v3/segments/${segmentId}?access_token=${stravaToken}`;
 
